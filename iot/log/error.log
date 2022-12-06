@@ -1,0 +1,1 @@
+2022-12-06 14:16:16.722 [error] <0.282.0> Supervisor {<0.282.0>,amqp_channel_sup_sup} had child channel_sup started with amqp_channel_sup:start_link(network, <0.279.0>, <<"client 127.0.0.1:55762 -> 127.0.0.1:5672">>) at undefined exit with reason shutdown in context shutdown_error

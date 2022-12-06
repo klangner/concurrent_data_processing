@@ -1,0 +1,6 @@
+2022-12-06 14:16:16 =SUPERVISOR REPORT====
+     Supervisor: {<0.282.0>,amqp_channel_sup_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,1},{id,channel_sup},{mfargs,{amqp_channel_sup,start_link,[network,<0.279.0>,<<"client 127.0.0.1:55762 -> 127.0.0.1:5672">>]}},{restart_type,temporary},{shutdown,infinity},{child_type,supervisor}]
+
