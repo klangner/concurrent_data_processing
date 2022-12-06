@@ -1,9 +1,9 @@
-defmodule Facility.MixProject do
+defmodule Iot.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :facility,
+      app: :iot,
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule Facility.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Facility.Application, []}
+      mod: {Iot.Application, []}
     ]
   end
 

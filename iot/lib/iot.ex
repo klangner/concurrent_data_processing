@@ -1,6 +1,6 @@
-defmodule Facility do
+defmodule Iot do
   @moduledoc """
-  Documentation for `Facility`.
+  Documentation for `Iot`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Facility do
 
   ## Examples
 
-      iex> Facility.hello()
+      iex> Iot.hello()
       :world
 
   """
