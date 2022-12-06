@@ -13,6 +13,7 @@ defmodule Jobber.Application do
       name: Jobber.JobRunner
     ]
     children = [
+      {Registry, keys: :unique, name: Jobber.JobRegistry},
       {DynamicSupervisor, job_runner_config}
     ]
 
