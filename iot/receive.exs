@@ -9,7 +9,7 @@ defmodule ReceiveLogs do
   end
 end
 
-{:ok, connection} = AMQP.Connection.open
+{:ok, connection} = AMQP.Connection.open(host: "localhost")
 {:ok, channel} = AMQP.Channel.open(connection)
 
 AMQP.Exchange.declare(channel, "logs", :fanout)

@@ -24,3 +24,9 @@ airports-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+/log/
+
+/.elixir_ls/
+
+/priv/

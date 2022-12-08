@@ -26,3 +26,7 @@ iot-*.tar
 /tmp/
 
 /log/
+
+/.elixir_ls/
+
+/priv/
