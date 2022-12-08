@@ -15,7 +15,7 @@ end
 AMQP.Exchange.declare(channel, "logs", :fanout)
 # :exclusive means queue is temporary
 {:ok, %{queue: queue_name}} = AMQP.Queue.declare(channel, "", exclusive: true)
-AMQP.Queue.bind(channel, queue_name, "logs")
+AMQP.Queue.bind(channel, queue_name, "readings")
 AMQP.Basic.consume(channel, queue_name, nil, no_ack: true)
 IO.puts " [*] Waiting for messages. To exit press CTRL+C, CTRL+C"
 

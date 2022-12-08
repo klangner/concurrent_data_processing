@@ -15,15 +15,15 @@ defmodule Iot.MixProject do
   def application do
     [
       applications: [:amqp],
-      # extra_applications: [:logger],
-      mod: {Iot.Application, []}
+      mod: {Iot.Application, []},
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:amqp, "~> 1.0"}
+      {:amqp, "~> 1.0"},
+      {:avrora, "~> 0.21"}
     ]
   end
 end
