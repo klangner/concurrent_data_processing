@@ -8,6 +8,10 @@ alias NimbleCSV.RFC4180, as: CSV
     Application.app_dir(:airports, "/priv/airports.csv")
   end
 
+  def airports_small() do
+    Application.app_dir(:airports, "/priv/airports_small.csv")
+  end
+
   def open_airports() do
     airports_csv()
     |> File.stream!()
